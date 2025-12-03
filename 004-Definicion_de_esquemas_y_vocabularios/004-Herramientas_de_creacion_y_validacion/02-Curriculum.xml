@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Curriculum>
+    <PersonalInformation>
+        <FullName>Bryan Alejandro Avila Castro</FullName>
+        <Description>Estudiante de DAW, Responsable y aportador de ideas.</Description>
+        <PersonalSummary>
+            Soy graduado de barchillerato en ciencias, poseo conocimientos en el area de programación y suelo usar lenguajes como java y python. Soy proactivo y me gusta hacer mis proyectos de forma independiente ademas soy bueno trabajando en equipo y me suelo desenvolver rapidamente para trabajar con mayor comodidad con mi grupo de trabajo.
+        </PersonalSummary>
+    </PersonalInformation>
+
+```
+<Contact>
+    <Phone>624 47 3659</Phone>
+    <Email>bc714006@gmail.com</Email>
+    <Github>https://github.com/BAAC007</Github>
+</Contact>
+
+<Skills>
+    <Skill>Proactivo</Skill>
+    <Skill>Organizado</Skill>
+    <Skill>Responsable</Skill>
+    <Skill>Creativo</Skill>
+</Skills>
+
+<AdditionalInfo>
+    <Info>Flexibilidad horaria</Info>
+    <Info>Disponibilidad geografica</Info>
+    <Info>Conocimientos en excel</Info>
+</AdditionalInfo>
+
+<Education>
+    <Degree>
+        <Title>Barchillerato</Title>
+        <Period>2018 - 2023</Period>
+        <Institution>U.E.P "San Francisco de Sales"</Institution>
+    </Degree>
+    <Complementary>
+        <Course>
+            <Title>Estudios online</Title>
+            <Period>2024 - 2024</Period>
+            <Institution>Sololearn.com</Institution>
+            <Description>Aprendí a usar el lenguaje de programación Java en sus niveles de principiante y intermedio.</Description>
+        </Course>
+    </Complementary>
+</Education>
+
+<VolunteerExperience>
+    <Activity>
+        <Title>Labor social</Title>
+        <Period>2022 - 2023</Period>
+        <Institution>U.E.P "San Francisco de Sales"</Institution>
+        <Description>Realicé tareas en el area de administración en el colegio U.E.P "San Francisco de Sales", organizando documentación de alumnos, estar al tanto de los pases de entrada de los estudiantes y documentar sus faltas. Ademas de brindar apoyo a los estudiantes.</Description>
+    </Activity>
+</VolunteerExperience>
+```
+
+</Curriculum>
