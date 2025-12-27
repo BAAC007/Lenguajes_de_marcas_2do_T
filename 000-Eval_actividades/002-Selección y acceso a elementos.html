@@ -4,7 +4,12 @@
 <head>
     <title>Javascript</title>
     <meta charset="utf-8">
+    <!--Usamos style para darle color al apartado 1-->
     <style>
+        #morado {
+            color: purple;
+        }
+
         #rojo {
             color: red;
         }
@@ -20,15 +25,21 @@
 </head>
 
 <body>
+    <!--Apartado-1: Este es el primer apartado que mostraria en pantalla 4 mensajes (Hola, texto rojo, texto verde y texto azul) -->
+    <div id="morado"></div>
     <div id="rojo"></div>
     <div id="verde"></div>
     <div id="azul"></div>
     <script>
+        //En esta parte sellecionamos los id de los div y imprimimos y agregamos contenido.
+        document.querySelector("#morado").textcontent = "";
         document.querySelector("#rojo").textContent = "texto rojo";
         document.querySelector("#verde").textContent = "texto verde";
         document.querySelector("#azul").textContent = "texto azul";
     </script>
     <hr>
+
+    <!--Apartado-2: En este apartado seleccionamos la etiqueta de parrafo y la mostramos en el documento con codigo JS-->
     <p>Soy un párrafo</p>
     <script>
         // Selecciono el elemento que tenga la etiqueta p
@@ -37,12 +48,14 @@
         document.write(elemento.textContent);
     </script>
     <hr>
-    <div></div>
+
+    <!--Apartado-1.5: En este apartado seleccionamos la etiqueta div y cambiamos el valor para hacerlo la etiqueta h1 que contiene "hola"-->
     <script>
         document.querySelector("div").innerHTML = "<h1>Hola</h1>";
-
     </script>
+
     <main>
+        <!--Apartado-3: En este apartado creamos un bucle que nos muestra en el documento lo que contiene articulos-->
         <script>
             const articulos = [
                 "Primer artículo", "Segundo artículo", "Tercer artículo"
