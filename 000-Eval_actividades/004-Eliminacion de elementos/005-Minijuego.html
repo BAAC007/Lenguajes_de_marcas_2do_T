@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Minijuego</title>
+    <style>
+        #jugador{
+            width: 20px;
+            height: 20px;
+            background: green;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="jugador"></div>
+    <script>
+        let temporizador = setTimeout("Bucle()", 2000);
+
+        function Bucle(){
+            console.log("hola");
+            document.querySelector("#jugador").style.left = Math.random()*500+ "px"
+            document.querySelector("#jugador").style.top = Math.random()*500+ "px"
+            clearTimeout(temporizador)
+            temporizador = setTimeout("Bucle()", 2000);
+            document.querySelector("#jugador").onclick = function(){
+                this.remove()
+                document.write("Ganaste")
+            }
+        }
+    </script>
+</body>
+</html>

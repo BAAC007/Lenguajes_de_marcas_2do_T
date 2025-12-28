@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div id="contenedor"></div>
+    <script>
+        let elemento = document.createElement("p");
+        elemento.textContent = "Contenido desde JS";
+        let contenedor = document.querySelector("#contenedor");
+        contenedor.appendChild(elemento);
+
+        elemento.remove();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <table></table>
+    <script>
+        let tabla = document.querySelector("table")
+        for(let i = 0; i < 20; i++){
+            let fila = document.createElement("tr")
+            fila.innerHTML = "<td>Prueba</td><td>Prueba1</td><td>Prueba2</td>"
+            tabla.appendChild(fila)
+            fila.onclick = function(){
+                this.remove()
+            }
+            fila.addEventListener("click",function(){
+                this.remove()
+            })
+        }
+    </script>
+</body>
+</html>
