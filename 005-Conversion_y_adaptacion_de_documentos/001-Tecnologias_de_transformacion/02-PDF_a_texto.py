@@ -1,4 +1,4 @@
-#sudo apt install pydf --break-system-packages
+#sudo apt install pypdf --break-system-packages
 from pypdf import PDFreader
 
 lector = PDFreader("librophp.pdf")
