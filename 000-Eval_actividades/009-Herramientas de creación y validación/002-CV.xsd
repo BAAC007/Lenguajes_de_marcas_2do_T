@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           attributeFormDefault="unqualified"
+           elementFormDefault="qualified">
+
+  <xs:element name="Curriculum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PersonalInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="FullName"/>
+              <xs:element type="xs:string" name="Description"/>
+              <xs:element type="xs:string" name="PersonalSummary"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Contact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Phone"/>
+              <xs:element type="xs:string" name="Email"/>
+              <xs:element type="xs:string" name="Github"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Skills">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Skill" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="AdditionalInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Info" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="Education">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Degree">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Title"/>
+                    <xs:element type="xs:string" name="Period"/>
+                    <xs:element type="xs:string" name="Institution"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="Complementary">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Course" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Title"/>
+                          <xs:element type="xs:string" name="Period"/>
+                          <xs:element type="xs:string" name="Institution"/>
+                          <xs:element type="xs:string" name="Description"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="VolunteerExperience">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Activity" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Title"/>
+                    <xs:element type="xs:string" name="Period"/>
+                    <xs:element type="xs:string" name="Institution"/>
+                    <xs:element type="xs:string" name="Description"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
