@@ -1,7 +1,7 @@
 # sudo apt install fpdf --break-system-packages
 from fpdf import FPDF
 
-def text_to_pdf(text, filename="salida.pdf"):
+def text_to_pdf(text, filename="librophp.pdf"):
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", size=12)
